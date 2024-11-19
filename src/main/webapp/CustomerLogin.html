@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customer Login</title>
+    <style>
+        body {
+            background-image: url('image/cloth.jpg'); /* Path to your background image */
+            background-size: cover; /* Cover the entire viewport */
+            background-position: center; /* Center the image */
+            background-repeat: no-repeat; /* Prevent repetition */
+            margin: 0; /* Remove default margin */
+            height: 100vh; /* Ensure the body takes the full height of the viewport */
+            display: flex; /* Use flexbox for centering */
+            justify-content: center; /* Center horizontally */
+            align-items: center; /* Center vertically */
+            font-family: 'Arial', sans-serif; /* Set a default font */
+            color: #fff; /* Default text color */
+        }
+
+        .container {
+			background-color: rgba(255, 190, 255, 0.5);
+            padding: 30px; /* Add some padding */
+            border-radius: 15px; /* Rounded corners */
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5); /* Shadow for depth */
+            text-align: center; /* Center text inside the container */
+            width: 100%; /* Set a width for the container */
+            max-width: 400px; /* Set a maximum width */
+        }
+
+        h1 {
+            margin-bottom: 20px; /* Space below the heading */
+            font-size: 24px; /* Font size for the heading */
+        }
+
+        input {
+            margin-bottom: 15px; /* Space below each input */
+            padding: 10px; /* Padding inside the input */
+            width: 100%; /* Full width */
+            border-radius: 5px; /* Rounded corners */
+            border: 1px solid #ccc; /* Border color */
+            font-size: 16px; /* Font size for inputs */
+        }
+
+        input[type="submit"] {
+            background-color: #ff1493; /* Blue background */
+            color: white; /* White text */
+            border: none; /* No border */
+            cursor: pointer; /* Pointer cursor on hover */
+            font-size: 16px; /* Font size for button */
+        }
+
+        input[type="submit"]:hover {
+            background-color: #ff1493; /* Darker blue on hover */
+        }
+
+        a {
+            color: #fff; /* Change link color for better visibility */
+            text-decoration: none; /* Remove underline from links */
+            margin-top: 10px; /* Space above the link */
+            display: inline-block; /* Make link behave like a block */
+        }
+
+        a:hover {
+            text-decoration: underline; /* Underline on hover */
+             /* Change color on hover */
+        }
+        button
+        {
+			width: 150px;
+			height:50px;
+			margin-top: 5px;
+			border-radius: 10px;
+						margin-bottom: 5px;
+
+			            background-color: #ff1493; /* Darker blue on hover */
+
+		}
+		button:hover
+		{
+			            background-color: rgba(255, 192, 203, 0.5); /* Light pink background on hover */
+
+		}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Customer Login</h1>
+        <form action="CustomerLoginServlet" method="POST">
+            <input type="text" name="uname" placeholder="Username" required><br>
+            <input type="password" name="pword" placeholder="Password" required><br>
+            <input type="submit" value="Login"><br>
+        </form>
+        <button><a href="CustomerRegistration.html">Register Here</a></button>
+    </div>
+</body>
+</html>

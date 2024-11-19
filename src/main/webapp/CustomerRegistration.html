@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="ISO-8859-1">
+    <title>Customer Registration</title>
+    <style>
+        body {
+            background-image: url('images/shooper.jpeg'); /* Path to your background image */
+            background-size: cover; /* Cover the entire viewport */
+            background-position: center; /* Center the image */
+            background-repeat: no-repeat; /* Prevent repetition */
+            margin: 0; /* Remove default margin */
+            height: 100vh; /* Ensure the body takes the full height of the viewport */
+            display: flex; /* Use flexbox for centering */
+            justify-content: center; /* Center horizontally */
+            align-items: center; /* Center vertically */
+        }
+
+        h1 {
+            background-color: rgba(0, 0, 0, 0.5); /* Solid background color */
+            color: white; /* Change text color for better visibility */
+            padding: 10px; /* Add some padding */
+            border-radius: 50px; /* Rounded corners */
+            text-align: center; /* Center text inside the h1 */
+            width: 100%; /* Set a width for the h1 */
+            max-width: 600px; /* Set a maximum width */
+            box-shadow: 0 4px 10px rgba(255, 255, 255, 0.5); /* Optional: add shadow for better visibility */
+        }
+
+        input {
+            margin-bottom: 10px;
+            padding: 10px;
+            width: 80%;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+
+        input[type="submit"] {
+            background-color: #4CAF50; /* Green */
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #45a049; /* Darker green */
+        }
+
+        a {
+            color: white; /* Change link color for better visibility */
+            text-decoration: none; /* Remove underline from links */
+        }
+
+        a:hover {
+            text-decoration: underline; 
+            text-shadow: blueviolet;
+        }
+    </style>
+</head>
+<body>
+    <center>
+        <h1>Customer Registration</h1>
+        <form action="CustomerRegistrationServlet" method="POST">
+            Username: <input type="text" name="uname" required><br>
+            Password: <input type="password" name="pword" required><br>
+            First Name: <input type="text" name="fname" required><br>
+            Last Name: <input type="text" name="lname" required><br>
+            Address: <input type="text" name="addr" required><br>
+            Email: <input type="email" name="mid" required><br>
+            Mobile No: <input type="text" name="phno" required><br>
+            <input type="submit" value="Register"><br>
+        </form>
+        <a href="index.html">Back to Home</a>
+    </center>
+</body>
+</html>

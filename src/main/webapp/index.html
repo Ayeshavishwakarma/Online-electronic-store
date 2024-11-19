@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="ISO-8859-1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Electronic Store</title>
+    <script>
+        function showAlert() {
+            alert("Welcome to online electronic shop!!");
+            window.location.href = "AdminLogin.html";
+        }
+    </script>
+    <style>
+        body {
+            background-image: url('image/cloth.jpg'); /* Path to your background image */
+            background-size: cover; /* Cover the entire viewport */
+            background-position: center; /* Center the image */
+            background-repeat: no-repeat; /* Prevent repetition */
+            margin: 0; /* Remove default margin */
+            height: 100vh; /* Ensure the body takes the full height of the viewport */
+            display: flex; /* Use flexbox for centering */
+            justify-content: center; /* Center horizontally */
+            align-items: center; /* Center vertically */
+            font-family: 'Arial', sans-serif; /* Set a default font */
+            color: #333; /* Default text color */
+            text-align: center; /* Center text */
+        }
+
+        h1 {
+            background: linear-gradient(135deg, rgba(255, 192, 203, 0.8), rgba(255, 105, 180, 0.8)); /* Pink gradient background */
+            color: white; /* Change text color for better visibility */
+            padding: 30px; /* Add some padding */
+            border-radius: 15px; /* Rounded corners */
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); /* Shadow for depth */
+            animation: fadeIn 1s ease; /* Fade-in animation */
+           
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+        form
+        {
+			background-color: white;
+			border-radius: 10px;
+			margin-bottom: 100px;
+			padding-bottom: 10px;
+			background-color: rgba(255, 190, 255, 0.5);
+		}
+
+        a {
+            color: white; /* Pink color for links */
+            text-decoration: none; /* Remove underline from links */
+            display: inline-block; /* Make links behave like buttons */
+            margin: 15px 0; /* Add some margin */
+            padding: 12px 20px; /* Add padding for a button-like appearance */
+            border: 2px solid transparent; /* Border for hover effect */
+            border-radius: 5px; /* Rounded corners */
+            background-color: rgba(255, 105, 180, 0.7); /* Pink background color */
+            transition: background-color 0.3s, border-color 0.3s, transform 0.3s; /* Smooth transition */
+            width: 80%;
+        }
+
+        a:hover {
+            background-color: rgba(255, 192, 203, 0.5); /* Light pink background on hover */
+            border-color: #ff69b4; /* Change border color on hover */
+            transform: scale(1.05); /* Slightly enlarge on hover */
+        }
+
+        a:active {
+            color: #ff1493; /* Darker pink when active */
+        }
+
+        button {
+            background-color: #ff69b4; /* Pink button background */
+            color: white; /* White text */
+            border: none; /* No border */
+            border-radius: 5px; /* Rounded corners */
+            padding: 12px 20px; /* Padding for button */
+            cursor: pointer; /* Pointer cursor on hover */
+            transition: background-color 0.3s, transform 0.3s; /* Smooth transition */
+        }
+
+        button:hover {
+            background-color: rgba(255, 105, 180, 0.8); /* Lighter pink on hover */
+            transform: scale(1.05); /* Slightly enlarge on hover */
+        }
+
+        button:active {
+            background-color: #ff1493; /* Darker pink when active */
+        }
+    </style>
+</head>
+
+<body>
+	<form>
+    <h1>Online Electronic Store</h1><br><br>
+    
+    <a href="#" onclick="showAlert()">Admin Login</a><br>
+    <a href="CustomerLogin.html">Customer Login</a>
+	</form>
+    </body>
+</body>
+</html>
